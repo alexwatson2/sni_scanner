@@ -1,2 +1,9 @@
 # sni_scanner
-sni_scanner For iran
+Sni Scanner
+
+create file targets.txt
+
+example in File :
+google.com
+www.cloudflare.COM
+88.135.36.22
