@@ -2,6 +2,13 @@
 
 A powerful multi-threaded Python tool for scanning SSL/TLS ports and checking connectivity across multiple targets. This scanner checks common HTTPS/SSL ports and includes ping verification to test host reachability.
 
+# Using default file (targets.txt)
+python sni_scanner.py
+
+# Using a custom input file
+python sni_scanner.py my_targets.txt
+
+
 ## ✨ Features
 
 - **Multi-threaded scanning** - Fast concurrent scanning of multiple targets
