@@ -126,26 +126,35 @@ Solution: Reduce CONNECTION_TIMEOUT or decrease max_workers value
 
 
 
-📁 File Structure
+## 📋 Prerequisites
 
-sni-scanner/
-├── sni_scanner.py      # Main scanner script
-├── targets.txt         # Input targets (create this)
-├── result.txt          # Output results (auto-generated)
-└── README.md          # This file
+- Python 3.6 or higher (uses only standard library: `socket`, `sys`, `os`, `subprocess`, `platform`, `concurrent.futures`)
 
-🔧 Advanced Usage Examples
+## 🚀 Installation
 
-Scan specific IP range
+```bash
+git clone https://github.com/alexwatson2/sni_scanner.git
+cd sni_scanner
+chmod +x sni_scanner.py  # Linux/macOS
+```
+## 📖 Usage
 
-# Create targets.txt with IPs
-for i in {1..254}; do echo "192.168.1.$i" >> targets.txt; done
-python3 sni_scanner.py
+1. Create a `targets.txt` file with your targets (one per line):
+   ```text
+   google.com
+   github.com
+   1.1.1.1
+   example.com
+   ```
 
-Combine with other tools
-# Extract domains from a file and scan
-grep -oP 'https?://\K[^/]+' urls.txt > targets.txt
-python3 sni_scanner.py
+2. Run the scanner:
+   ```bash
+   # Using default file (targets.txt)
+   python sni_scanner.py
+   
+   # Using a custom input file
+   python sni_scanner.py my_targets.txt
+   ```
 
 ⭐ Support
 If you find this tool useful, please give it a star on GitHub!
