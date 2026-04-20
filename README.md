@@ -8,6 +8,17 @@ python sni_scanner.py
 # Using a custom input file
 python sni_scanner.py my_targets.txt
 
+Important Notes for firewall_manager.bat
+
+    Run as Administrator: This script requires administrator privileges. Right-click and select "Run as Administrator"
+
+    Temporary Use Only: Only disable firewall during active scanning, then re-enable immediately
+
+    Security Risk: Disabling firewall exposes your system to network threats
+
+    Alternative: Consider creating firewall rules instead of completely disabling it:
+    
+    
 
 ## ✨ Features
 
